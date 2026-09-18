@@ -17,6 +17,19 @@
 1. **给 AI 用**——筹备会议、主持会议、写讲话稿、做会议纪要、抓会议精神落实等任务，按本 skill 的方法论干活
 2. **给自己用**——按讲次或主题快速检索书中观点与方法
 
+## 使用案例
+
+一句话调用示例（完整实战见 [examples/](examples/) 目录）：
+
+| 你说 | AI 会做什么 |
+|------|------------|
+| "两周后开跨部门部署会，任务清单附后，帮我筹备" | 议程筐→议题把关→规模控制→通知与会前检查清单（[案例1](examples/example-1-deployment-meeting-prep.md)） |
+| "明天主持方案评审会，两个团队对立+有大佬跑题" | 虎头熊腰豹尾+控场速查卡+两个变成（[案例2](examples/example-2-chairing-discussion.md)） |
+| "开决策会拍'是否自建数据平台'，正反都有硬理由" | 议题成熟度检查+一个制度三个规矩+交换比较反复（[案例3](examples/example-3-decision-meeting.md)） |
+| "开两场座谈会听真话，别让满意代表垄断" | 三个怎样+示弱求真话+三类人都请+反馈闭环（[案例4](examples/example-4-symposium-design.md)） |
+| "公司要来我这开现场会，怎么防盆景秀" | 只看新典型+以面验点+交叉抽查+材料红线（[案例5](examples/example-5-onsite-meeting.md)） |
+| "大会昨天开完，6 项任务怎么抓落地" | 两个90%+事项项目化+刚性时限+视频调度会（[案例6](examples/example-6-implementation.md)） |
+
 ## 目录结构
 
 ```
@@ -38,6 +51,7 @@ how-to-run-meetings/
 │   ├── ch13-video-phone-meetings.md      # 第十三讲 视频会和手机会
 │   ├── ch14-meeting-publicity.md         # 第十四讲 会议的宣传
 │   └── ch15-implementing-meeting-spirit.md # 第十五讲 会议精神的落实
+├── examples/             # 六个完整实战案例（筹备/主持/决策/座谈/现场/落实）
 ├── glossary.md           # 全书术语表
 ├── patterns.md           # 方法与模式全集
 ├── cheatsheet.md         # 决策速查表（最实用的一层）
@@ -59,10 +73,12 @@ how-to-run-meetings/
 
 由 OpenClaw book-to-skill 流水线生成：196 页扫描版 PDF → OCR 全文提取（AutoClaw OCR）→ 结构分析 → 逐章提炼 → 安全扫描。提炼遵循"提取结构，不抄原文"原则，框架命名保留作者原话。
 
-## 姊妹篇
+## 机关工作实务四部曲
 
-- [how-to-research](https://github.com/yxdwind/how-to-research) —— 《怎样调研》（同系列第二本）
-- 《怎样写作》—— 同系列第三本（暂未制作）
+- how-to-run-meetings（本仓库）—— 《怎样开会》（任仲然）
+- [how-to-research](https://github.com/yxdwind/how-to-research) —— 《怎样调研》（任仲然）
+- [how-to-write](https://github.com/yxdwind/how-to-write) —— 《怎样写作》（任仲然）
+- [smart-notes](https://github.com/yxdwind/smart-notes) —— 《卡片笔记写作法》（申克·阿伦斯）
 
 ## 版权说明
 
