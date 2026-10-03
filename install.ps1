@@ -18,6 +18,7 @@ $RepoDir   = $PSScriptRoot
 # 候选技能目录（父目录存在 = 对应工具大概率已安装）
 $Candidates = @(
     "$env:USERPROFILE\.agents\skills",           # skills.sh 通用 / OpenClaw
+    "$env:USERPROFILE\.zcode\skills",            # ZCode
     "$env:USERPROFILE\.claude\skills",           # Claude Code
     "$env:USERPROFILE\.codex\skills",            # Codex
     "$env:USERPROFILE\.cursor\skills",           # Cursor

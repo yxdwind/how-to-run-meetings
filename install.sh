@@ -22,6 +22,7 @@ done
 # 候选技能目录（父目录存在 = 对应工具大概率已安装）
 CANDIDATES=(
   "$HOME/.agents/skills"           # skills.sh 通用 / OpenClaw
+  "$HOME/.zcode/skills"            # ZCode
   "$HOME/.claude/skills"           # Claude Code
   "$HOME/.codex/skills"            # Codex
   "$HOME/.cursor/skills"           # Cursor
