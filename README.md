@@ -4,7 +4,7 @@
 
 ## 这是什么
 
-一个 OpenClaw / Claude Code / Copilot CLI / Amp 兼容的 skill 目录，把全书十五讲的会议方法论拆解为：
+一个符合 Agent Skills 标准、跨工具兼容的 skill 目录（Claude Code / OpenClaw / Codex / Cursor / Cline / CodeBuddy 等；安装脚本自动探测，其余工具手动复制 SKILL.md 目录即可）。把全书十五讲的会议方法论拆解为：
 
 - **命名框架与原则**——保留作者原话表述
 - **可执行的操作步骤**——每讲的方法都写成"何时用 / 怎么做"
@@ -55,7 +55,7 @@ git clone https://github.com/yxdwind/how-to-run-meetings.git
 |------|------------|
 | "两周后开跨部门部署会，任务清单附后，帮我筹备" | 议程筐→议题把关→规模控制→通知与会前检查清单（[案例1](examples/example-1-deployment-meeting-prep.md)） |
 | "明天主持方案评审会，两个团队对立+有大佬跑题" | 虎头熊腰豹尾+控场速查卡+两个变成（[案例2](examples/example-2-chairing-discussion.md)） |
-| "开决策会拍'是否自建数据平台'，正反都有硬理由" | 议题成熟度检查+一个制度三个规矩+交换比较反复（[案例3](examples/example-3-decision-meeting.md)） |
+| "开决策会拍'是否自建数据平台'，正反都有硬理由" | 议题四种可能+一个制度三个规矩+头脑风暴（[案例3](examples/example-3-decision-meeting.md)） |
 | "开两场座谈会听真话，别让满意代表垄断" | 三个怎样+示弱求真话+三类人都请+反馈闭环（[案例4](examples/example-4-symposium-design.md)） |
 | "公司要来我这开现场会，怎么防盆景秀" | 只看新典型+以面验点+交叉抽查+材料红线（[案例5](examples/example-5-onsite-meeting.md)） |
 | "大会昨天开完，6 项任务怎么抓落地" | 两个90%+事项项目化+刚性时限+视频调度会（[案例6](examples/example-6-implementation.md)） |
@@ -84,8 +84,10 @@ how-to-run-meetings/
 ├── examples/             # 六个完整实战案例（筹备/主持/决策/座谈/现场/落实）
 ├── glossary.md           # 全书术语表
 ├── patterns.md           # 方法与模式全集
-├── cheatsheet.md         # 决策速查表（最实用的一层）
+├── cheatsheet.md         # 决策速查表（当…就…判断规则+阈值+危险信号）
 ├── overview.html         # 可视化总览页
+├── install.sh            # macOS / Linux 安装脚本（自动探测技能目录）
+├── install.ps1           # Windows PowerShell 安装脚本
 └── README.md
 ```
 
@@ -112,4 +114,4 @@ how-to-run-meetings/
 
 ## 版权说明
 
-本书版权归原作者及出版社（党建读物出版社）所有。本仓库仅包含对书中方法论的提炼与转述（合理使用），不包含原文文本。
+本书版权归原作者及出版社（党建读物出版社）所有。本仓库仅包含对书中方法论的提炼与转述（合理使用），不包含原文文本；案例与数字为压缩转述，未逐字核对原书，引用请以原著为准。
