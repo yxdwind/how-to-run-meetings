@@ -52,6 +52,9 @@ foreach ($t in $targets) {
         Write-Host "[!] 已存在: $dest （加 -Force 覆盖）" -ForegroundColor Yellow
         continue
     }
+    if (Test-Path $dest) {
+        Remove-Item $dest -Recurse -Force   # 覆盖前先清空，避免仓库已删除的文件残留在已装目录
+    }
     Copy-Skill $dest
     Write-Host "[✓] 已安装 $SkillName -> $dest"
 }
