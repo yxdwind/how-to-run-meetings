@@ -105,12 +105,17 @@ how-to-run-meetings/
 
 由 OpenClaw book-to-skill 流水线生成：196 页扫描版 PDF → OCR 全文提取（AutoClaw OCR）→ 结构分析 → 逐章提炼 → 安全扫描。提炼遵循"提取结构，不抄原文"原则，框架命名保留作者原话。
 
-## 机关工作实务四部曲
+## 相关技能
 
-- how-to-run-meetings（本仓库）—— 《怎样开会》（任仲然）
-- [how-to-research](https://github.com/yxdwind/how-to-research) —— 《怎样调研》（任仲然）
-- [how-to-write](https://github.com/yxdwind/how-to-write) —— 《怎样写作》（任仲然）
-- [smart-notes](https://github.com/yxdwind/smart-notes) —— 《卡片笔记写作法》（申克·阿伦斯）
+**机关工作实务丛书**（任仲然）三部曲：
+
+- how-to-run-meetings（本仓库） —— 《怎样开会》
+- [how-to-research](https://github.com/yxdwind/how-to-research) —— 《怎样调研》
+- [how-to-write](https://github.com/yxdwind/how-to-write) —— 《怎样写作》
+
+延伸阅读：
+
+- [smart-notes](https://github.com/yxdwind/smart-notes) —— 《卡片笔记写作法》（申克·阿伦斯）提炼的卡片笔记方法论技能
 
 ## 版权说明
 
