@@ -1,5 +1,7 @@
 # 怎样开会 (how-to-run-meetings)
 
+![Release](https://img.shields.io/github/v/release/yxdwind/how-to-run-meetings) ![License](https://img.shields.io/github/license/yxdwind/how-to-run-meetings) ![Agent Skills](https://img.shields.io/badge/Agent-Skills-blue)
+
 > 从《怎样开会》（任仲然著，党建读物出版社，"机关工作实务丛书"第一本）提炼的 Agent 技能库——不是书的摘要，而是一套可执行的会议方法论工具箱。
 
 ## 这是什么
@@ -45,7 +47,7 @@ git clone https://github.com/yxdwind/how-to-run-meetings.git
 # 如 ~/.agents/skills/how-to-run-meetings 或 ~/.claude/skills/how-to-run-meetings
 ```
 
-更新已装的 skill：`npx skills update how-to-run-meetings`，或重跑安装脚本（加 -Force/--force 覆盖）。
+更新已装的 skill：`npx skills update how-to-run-meetings`，或重跑安装脚本（加 -Force/--force 覆盖）。固定版本下载见 [Releases](https://github.com/yxdwind/how-to-run-meetings/releases)。
 
 ## 使用案例
 
@@ -117,6 +119,8 @@ how-to-run-meetings/
 
 - [smart-notes](https://github.com/yxdwind/smart-notes) —— 《卡片笔记写作法》（申克·阿伦斯）提炼的卡片笔记方法论技能
 
-## 版权说明
+## 许可证与版权
 
-本书版权归原作者及出版社（党建读物出版社）所有。本仓库仅包含对书中方法论的提炼与转述（合理使用），不包含原文文本；案例与数字为压缩转述，未逐字核对原书，引用请以原著为准。
+本仓库的代码与文档以 [MIT License](LICENSE) 发布。
+
+《怎样开会》一书版权归原作者及出版社（党建读物出版社）所有。本仓库仅包含对书中方法论的提炼与转述（合理使用），不包含原文文本；案例与数字为压缩转述，未逐字核对原书，引用请以原著为准。
