@@ -74,19 +74,19 @@
   <main>
     <div class="kicker">AGENT SKILL OVERVIEW · 机关工作实务丛书之一</div>
     <h1>怎样开会<span class="en">how-to-run-meetings — 源自《怎样开会》（任仲然 著）</span></h1>
-    <p class="lede">不是书的摘要，而是一套<em>可执行的会议方法论工具箱</em>：从"要不要开这个会"到"会议精神落地"，十五讲提炼为命名框架、判断规则、操作步骤与反面警示——给 AI 装上"会议操作系统"，也给你自己一部按讲次、按主题可检索的办会手册。</p>
+    <p class="lede">不是书的摘要，而是一套<em>可执行的办会系统</em>："方法论 + 工序 + 模板自检 + 评测"四层——从"要不要开这个会"到"会议精神落地"，十五讲提炼为命名框架、判断规则、操作模板与自检筛——给 AI 装上"会议操作系统"，也给你自己一部按讲次、按主题可检索的办会手册。</p>
     <div class="stats">
       <div><b>196</b><span>页扫描版 PDF</span></div>
       <div><b>15</b><span>讲 · 逐章拆解</span></div>
       <div><b>97,136</b><span>字 OCR 全文</span></div>
-      <div><b>19</b><span>个技能文件</span></div>
+      <div><b>31</b><span>个核心技能文件</span></div>
       <div><b>0</b><span>段抄录原文</span></div>
     </div>
 
     <h2 id="s1">这个技能是什么</h2>
     <p class="sub">双用途设计 · 提炼原则：提取结构，不抄原文</p>
-    <p><b>给 AI 用</b>——筹备会议、主持会议、写讲话稿、做会议总结、组织座谈调研、抓会议精神落实等任务，按书中方法论行事：先判必要性，再精筹备，主持有章法，讲话有金标准，落实有抓手。</p>
-    <p><b>给自己用</b>——SKILL.md 是总纲，十五个章节文件按需加载；glossary 查术语、patterns 查做法、cheatsheet 查判断规则。</p>
+    <p><b>给 AI 用</b>——筹备会议、主持会议、写讲话稿、做会议总结、组织座谈调研、抓会议精神落实等任务，按办会工序行事：接会问诊→会前筹备→会中执行→会后收口→落实验收，每步有模板可填、有筛可过。</p>
+    <p><b>给自己用</b>——SKILL.md 是总纲，十五个章节文件按需加载；workflow 查工序、templates 拿模板、rubrics 过筛，glossary 查术语、patterns 查做法、cheatsheet 查判断规则。</p>
     <p>生成流水线：扫描版 PDF（无文字层）→ AutoClaw OCR 逐页识别 196 页 → 结构分析定位十五讲 → 逐章提炼 → 安全扫描 → 开源发布。框架命名保留作者原话，如"虎头、熊腰、豹尾""两个变成""真—落—实三字经"。</p>
 
     <h2 id="s2">全书骨架 · 十五讲</h2>
@@ -175,8 +175,12 @@
     <p class="sub">仓库即技能目录，双击 SKILL.md 从总纲进入</p>
 <pre>
 how-to-run-meetings/
-├── <b>SKILL.md</b>        # 核心框架 + 讲次索引 + 主题索引（入口）
+├── <b>SKILL.md</b>        # 核心框架 + 办会工序入口 + 讲次索引 + 主题索引（入口）
+├── <b>workflow.md</b>     # 办会工序：五步走（问诊→筹备→执行→收口→落实）
 ├── <b>chapters/</b>       # 十五讲逐章拆解（ch01–ch15，按需加载）
+├── <b>templates/</b>      # 六张操作模板：议程筐/通知/主持提纲卡/决策程序/纪要/落实台账
+├── <b>rubrics/</b>        # 五张交付前自检筛：通用+筹备/主持/讲话/纪要与落实
+├── <b>evals/</b>          # 基准评测：简报+评分表+跑分记录（改 skill 后跑回归）
 ├── <b>examples/</b>       # 六个完整实战案例（筹备/主持/决策/座谈/现场/落实）
 ├── <b>glossary.md</b>     # 术语表
 ├── <b>patterns.md</b>     # 方法与模式全集
@@ -185,7 +189,7 @@ how-to-run-meetings/
 ├── install.sh / install.ps1   # 安装脚本（自动探测技能目录）
 └── README.md
 </pre>
-    <p>对 Agent 说"用怎样开会筹备一场工作部署会"加载总纲；问具体主题（"主持座谈会有什么技巧"）自动定位章节；问 ch03 加载第三讲。姊妹篇：<a href="https://github.com/yxdwind/how-to-research" style="color:var(--accent-ink)">how-to-research（怎样调研）</a>。</p>
+    <p>对 Agent 说"用怎样开会筹备一场工作部署会"加载总纲并走五步工序；问具体主题（"主持座谈会有什么技巧"）自动定位章节；问 ch03 加载第三讲。姊妹篇：<a href="https://github.com/yxdwind/how-to-research" style="color:var(--accent-ink)">how-to-research（怎样调研）</a>、<a href="https://github.com/yxdwind/how-to-write" style="color:var(--accent-ink)">how-to-write（怎样写作）</a>。</p>
 
     <div class="colophon">
       源书：《怎样开会》，任仲然著，党建读物出版社（"机关工作实务丛书"第一本）· 本书版权归原作者及出版社所有，本仓库仅含方法论提炼与转述<br>
