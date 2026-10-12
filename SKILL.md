@@ -1,6 +1,6 @@
 ---
 name: how-to-run-meetings
-description: "怎样开会——从《怎样开会》（任仲然著，党建读物出版社）提炼的会议方法论技能库。当用户要筹备、主持、讲话、写纪要、抓落实等任何会议相关任务（工作部署会、决策会、座谈会、现场会、视频会、学习会、方案评审会、复盘会、跨部门协调会），或问及会议规则、议事规则、头脑风暴、讲话稿写法、会议精神落实时使用。Use when planning, chairing, speaking at, or following up on any meeting, or referencing the book's frameworks."
+description: "怎样开会——从《怎样开会》（任仲然著，党建读物出版社）提炼的会议方法论技能库。当用户要筹备、主持、讲话、写纪要、抓落实等任何会议相关任务（工作部署会、决策会、座谈会、现场会、视频会、学习会、方案评审会、复盘会、跨部门协调会），或问及会议规则、议事规则、头脑风暴、讲话稿写法、会议精神落实时使用。Use when planning, chairing, speaking at, or following up on any meeting, or referencing the book's frameworks. 需要办会工序、会议操作模板（议程/通知/主持提纲/纪要/落实台账）或办会交付前自检筛时也使用本 skill。"
 ---
 
 # 怎样开会
