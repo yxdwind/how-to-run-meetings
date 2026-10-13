@@ -28,7 +28,7 @@
 
 **评测层**（基准评测，防退化）
 
-- 任务简报 + 硬指标/盲评评分表 + 跑分全记录；改 skill 后跑回归（首轮已跑，见 [evals/runs.log.md](evals/runs.log.md)）
+- 任务简报 + 硬指标/盲评评分表 + 跑分全记录；改 skill 后跑回归（已跑两轮 3 简报，见 [evals/runs.log.md](evals/runs.log.md)）
 
 双用途设计：
 
@@ -77,6 +77,7 @@ git clone https://github.com/yxdwind/how-to-run-meetings.git
 | "开两场座谈会听真话，别让满意代表垄断" | 三个怎样+示弱求真话+三类人都请+反馈闭环（[案例4](examples/example-4-symposium-design.md)） |
 | "公司要来我这开现场会，怎么防盆景秀" | 只看新典型+以面验点+交叉抽查+材料红线（[案例5](examples/example-5-onsite-meeting.md)） |
 | "大会昨天开完，6 项任务怎么抓落地" | 两个90%+事项项目化+刚性时限+视频调度会（[案例6](examples/example-6-implementation.md)） |
+| "会后帮我把决议整理成纪要，再建落实台账" | 纪要模板（决议三要素）→落实台账（事项+项目+刚性时限）→纪要与落实筛（[workflow 第④⑤步](workflow.md)） |
 
 ## 目录结构
 
@@ -114,10 +115,11 @@ how-to-run-meetings/
 │   ├── speech.md                  # 临场讲话筛 10 项（成文深度起草归 how-to-write）
 │   └── minutes-implementation.md  # 纪要与落实筛 13 项
 ├── evals/                # 基准评测（改 skill 后跑回归）
-│   ├── README.md                # 评测方法与判定规则
+│   ├── README.md                # 评测方法与判定规则（含匿名化执行清单）
 │   ├── scoring.md               # 评分表：硬指标 60 + 软评 40 + 双轨分解
 │   ├── briefs/                  # 任务简报（3 个场景）
-│   │   └── runs.log.md              # 跑分记录（两轮 3 简报）
+│   ├── runs/                    # 参评卷存档（带 skill/基线）；runs/blind/ 匿名卷+评审档案
+│   └── runs.log.md              # 跑分记录（两轮 3 简报）
 ├── examples/             # 六个完整实战案例（筹备/主持/决策/座谈/现场/落实）
 ├── glossary.md           # 全书术语表
 ├── patterns.md           # 方法与模式全集
@@ -133,14 +135,11 @@ how-to-run-meetings/
 **Agent 里**（OpenClaw / Claude Code 等，将本目录放入技能目录后）：
 
 - 直接说"用怎样开会这个 skill 筹备一场工作部署会"→ 走五步工序：先问清类型目标参会人 → 给筹备方案 → 末尾附自检报告
+- 说"把会议决议整理成纪要/做落实台账"→ 用 [templates/](templates/) 对应模板产出，交付前过 [rubrics/](rubrics/) 对应筛
 - 问具体主题，如"主持座谈会有什么技巧"→ 自动定位到对应讲次细读
 - 问"ch03"→ 加载第三讲（如何主持会议）
 
 **人读**：从 [SKILL.md](SKILL.md) 的索引进入，按需点开各讲。
-
-## 生成方式
-
-由 OpenClaw book-to-skill 流水线生成：196 页扫描版 PDF → OCR 全文提取（AutoClaw OCR）→ 结构分析 → 逐章提炼 → 安全扫描。提炼遵循"提取结构，不抄原文"原则，框架命名保留作者原话。
 
 ## 生成方式
 
@@ -151,6 +150,8 @@ how-to-run-meetings/
 ## 质量与评测
 
 仓库内置了一套基准评测（[evals/](evals/)）：同一任务简报分别用"带本 skill"与"不带"两种方式生成，按硬指标打分（溯源、议程程序、时限刚性），改 skill 后跑回归。已跑三轮回归（3 简报全覆盖），带 skill 卷 95.4/89.4/95.4 分对基线 33.4/52.4/50.4 分全部判「有效」；基线卷在首轮触发"素材外编造"一票否决，盲评流程的匿名化缺陷与整改见 [runs.log.md](evals/runs.log.md) 完整性注记与 [AUDIT_V1.1.md](AUDIT_V1.1.md)。诚实口径：单样本只作流程验证，"装了平均好多少"的量化结论待简报库扩充后再下。
+
+**新增层专项审计（2026-10-12）**：v1.1 新增的工序/模板/自检筛/评测四层已完成专项审计（[AUDIT_V1.1.md](AUDIT_V1.1.md)，含独立复算稿 [AUDIT_V1.1_B.md](AUDIT_V1.1_B.md)）——新增文件讲次出处抽查逐条命中、评测数据链算术复算全对；审计发现的盲评匿名化缺陷已整改并成文执行清单（见上），历史评审档案保持原貌。
 
 **版权与忠实度**：三线审计（通用体检 + 原书忠实度 + 发布就绪）完成，15 章对原书覆盖度 75%–90%，与原书最长公共子串 47 字（带引号对话引语，单句级），无段落级抄录；详见 [AUDIT_REPORT.md](AUDIT_REPORT.md)（含修复执行记录）。
 
